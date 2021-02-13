@@ -9,28 +9,38 @@
   </head>
   <body>
     <div class="container">
-      <h1>Register With Us</h1>
-      <div class="form-group">
-        <label for="username">Username</label>
-        <input type="text" id="username" />
-      </div>
+      <form id="form" class="form">
+        <h2>Register With Us</h2>
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter username" />
+          <small>Error Message</small>
+        </div>
 
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" />
-      </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter email" />
+          <small>Error Message</small>
+        </div>
 
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" />
-      </div>
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter password" />
+          <small>Error Message</small>
+        </div>
 
-      <div class="form-group">
-        <label for="confirm-password">Confirmm-Password</label>
-        <input type="text" id="confirm-password" />
-      </div>
-
-      <input type="submit" value="Submit" />
+        <div class="form-control">
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="text"
+            id="confirm-password"
+            placeholder="Enter password again"
+          />
+          <small>Error Message</small>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
